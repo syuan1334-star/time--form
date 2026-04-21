@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/time--form/',
+  base: process.env.VITE_BASE_URL || '/time--form/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
